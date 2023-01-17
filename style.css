@@ -111,7 +111,7 @@ article.card .infos {
   position: relative;
   padding: 14px 24px;
   background: rgb(255, 255, 255);
-  transition: 0.4s 0.15s cubic-bezier(0.17, 0.67, 0.5, 1.03);
+  transition: all 0.5s;
 }
 article.card .infos .title {
   position: relative;
@@ -172,14 +172,16 @@ article.card .infos .details {
 }
 article.card:hover .infos {
   transform: translateY(-260px);
-  background:rgba(255, 255, 255, 0.736);
+  /* background: linear-gradient(0deg,white 30%,rgba(255, 255, 255, 0) 100%); 
+  glowing effect
+  */
+  
   
   
 }
 article.card:hover .infos .seats, article.card:hover .infos .txt, article.card:hover .infos .details {
   opacity: 1;
 }
-
 @media only screen and (max-width:1200px){
   
   .flex_title{
