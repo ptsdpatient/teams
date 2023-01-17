@@ -40,7 +40,8 @@ body {
   margin-bottom: 6vh;
 }
 .card_flex{
-  max-width:2000px;
+  max-width:2000vw;
+  /* max-width:2000px; */
   display:flex;
   flex-wrap:wrap;
   justify-content:space-evenly;
@@ -83,17 +84,11 @@ a[href]:hover::after {
 }
 
  article.card {
-  /*position: absolute;
-  left: 50%;
-  top: 50%;
-  left: 50%; */
   margin-bottom: 4vw;
   margin-left: 0.8vw;
   margin-right: 0.8vw;
-
   width: 280px;
   height: 350px;
-  /* transform: translate(-50%, -50%) translateZ(0); */
   border-radius: 3px;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
   overflow: hidden;
@@ -107,7 +102,7 @@ article.card .thumb {
   width: auto;
   height: 260px;
   background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/397014/new-york-city.png") no-repeat center;
-  background-size: cover;
+  
   border-radius: 3px;
 }
 article.card .infos {
@@ -183,4 +178,31 @@ article.card:hover .infos {
 }
 article.card:hover .infos .seats, article.card:hover .infos .txt, article.card:hover .infos .details {
   opacity: 1;
+}
+
+@media only screen and (max-width:1200px){
+ .card_flex{
+  max-width: 2000vw;
+ }
+ 
+ article.card{
+  width:400px;
+  height:500px;
+ }
+ article.card .thumb{
+  height:380px;
+  
+ } 
+ article.card .infos{
+  width:400px;
+  height:500px;
+ }
+ article.card:hover .infos {
+  transform: translateY(-380px);
+}
+i{
+font-size: 3rem !important;
+margin-left: 3rem;
+margin-bottom:1rem;
+}
 }
